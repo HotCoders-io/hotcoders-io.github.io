@@ -3619,67 +3619,9 @@
         }
         /**************************** Responsive Card ****************************/
         
-        main {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-        }
-        
         .text-card {
-            position: relative;
-            width: 370px;
-            height: 470px;
-            margin: 20px;
-            padding: 50px;
-            border-radius: 10px;
-            font-family: 'neuzeit-grotesk', sans-serif;
-            font-weight: 300;
-            font-style: normal;
-            font-size: 1em;
-            line-height: 1.5;
-            color: #303336;
-            background-color: #fff;
-            box-shadow: 0 40px 40px -20px #8fc7d577;
-        }
-        
-        .text-card .author-section {
-            position: relative;
-            display: flex;
-            height: 40px;
-        }
-        
-        .text-card .author-avator {
-            width: 40px;
-            height: 40px;
-            border-radius: 40px;
-            object-position: center;
-            object-fit: cover;
-        }
-        
-        .text-card .author-name {
-            position: relative;
-            display: inline-block;
-            height: fit-content;
-            font-weight: 700;
-            font-size: .875em;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: #000;
-            transition: 250ms;
-        }
-        
-        .text-card .author-avator-link {
-            margin-right: 20px;
-            border-radius: 40px;
-        }
-        
-        .text-card .author-name-link {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            height: fit-content;
+            justify-content: center;
+            padding: 20px;
         }
         
         .text-card p {
@@ -3689,7 +3631,7 @@
             color: #7b8591;
         }
         
-        .text-card button {
+        .text-card a {
             padding: 10px 25px 1px;
             border: 1px solid #ebebeb;
             border-radius: 50px;
@@ -3705,7 +3647,7 @@
             transition: 300ms;
         }
         
-        .text-card button:hover {
+        .text-card a:hover {
             border: 1px solid #bebebe;
         }
         /* Display this style when screen-width is lower than 425px */

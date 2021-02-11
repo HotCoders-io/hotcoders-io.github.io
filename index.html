@@ -1,254 +1,1710 @@
 <!doctype html>
-<!--
-Website By Miradontsoa / MiVFX
-http://twitter.com/miradontsoa
-http://miradontsoa.com
--->
-
 <html class="no-js" lang="en">
 
 <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <!doctype html>
+    <!-- Page Title Here -->
+    <title>HotCoder.io&trade;</title>
 
-    <html class="no-js" lang="en">
+    <!-- Meta -->
+    <!-- Page Description Here -->
+    <meta name="description" content="A beautiful and creative portfolio template. It is mobile friend (responsive) and comes with smooth animations">
 
-    <head>
+    <!-- Disable screen scaling-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
 
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Twitter Meta -->
+    <meta name="twitter:site" content="@HotCoder_io">
+    <meta name="twitter:creator" content="@HotCoder_io">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="HotCoder.io">
+    <meta name="twitter:description" content="Description of the page">
+    <meta name="twitter:image" content="/assets/img/bg-default.jpg">
 
-        <!-- Page Title Here -->
-        <title>Agenci - Portfolio demo page</title>
+    <!-- Facebook Meta -->
+    <meta property="og:url" content="https://www.facebook.com/hotcoder.io">
+    <meta property="og:title" content="HotCoder.io">
+    <meta property="og:description" content="Description of the page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/img/bg-default.jpg">
+    <meta property="og:image:secure_url" content="/assets/img/bg-default.jpg">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
-        <!-- Meta -->
-        <!-- Page Description Here -->
-        <meta name="description" content="A beautiful and creative portfolio template. It is mobile friend (responsive) and comes with smooth animations">
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+    <!-- Web fonts and Web Icons -->
+    <link rel="stylesheet" href="./assets/fonts/notosans/stylesheet.css">
+    <link rel="stylesheet" href="./assets/fonts/glacial/stylesheet.css">
+    <link rel="stylesheet" href="./assets/fonts/montserrat/stylesheet.css">
+    <link rel="stylesheet" href="./assets/fonts/playfair/stylesheet.css">
+    <link rel="stylesheet" href="./assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="./assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" />
 
-        <!-- Disable screen scaling-->
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <!-- Vendor CSS style -->
+    <link rel="stylesheet" href="./assets/css/pageloader.css">
 
-        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
-        <!-- Web fonts and Web Icons -->
-        <link rel="stylesheet" href="./fonts/opensans/stylesheet.css">
-        <link rel="stylesheet" href="./fonts/montserrat/stylesheet.css">
+    <!-- Uncomment below to load individualy vendor CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/js/vendor/swiper.min.css">
+    <link rel="stylesheet" href="./assets/js/vendor/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="./assets/css/vegas/vegas.min.css">
 
-        <!-- Uncomment below to load individualy vendor CSS -->
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Main CSS files -->
+    <link rel="stylesheet" href="./assets/css/main.css">
 
-        <!-- Main CSS files -->
-        <link rel="stylesheet" href="./css/demo.css">
-
-
-        <!-- alt layout -->
-        <!-- <link rel="stylesheet" href="./css/style-color5.css"> -->
-    </head>
     <!-- add alt layout here -->
-    <script src="./js/vendor/modernizr-2.7.1.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style-bg.css">
+
+    <script src="./assets/js/vendor/modernizr-2.7.1.min.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177236010-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-177236010-1');
+    </script>
+
+    <!-- JivoChat Support -->
+    <script src="//code.jivosite.com/widget/t7A8yJPtCQ" async></script>
+
+    <!-- Apple Business Chat -->
+    <script src="https://static.cdn-apple.com/businesschat/start-chat-button/2/index.js"></script>
 </head>
 
-<body id="menu" class="body-page body-demo">
+<body id="menu" class="body-page">
+    <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-    <header class="page-header-demo">
+    <!-- Page Loader : just comment these lines to remove it -->
+    <div class="page-loader" id="page-loader">
+        <div>
+            <div class="icon ion-spin"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- BEGIN OF site header Menu -->
+    <header class="page-header navbar page-header-drawer menu-right logo-left topmenu-right ">
+
+        <!-- Begin of menu icon toggler -->
+        <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
+          <!-- Available class : menu-icon-dot / menu-icon-line-->
+          <span class="menu-icon menu-icon-line">
+            <span class="text show-menu-visible">Close</span>
+            <span class="text hide-menu-visible">Menu</span>
+            <span class="bars">
+              <span class="bar1"></span>
+              <span class="bar2"></span>
+              <span class="bar3"></span>
+            </span>
+          </span>
+        </button>
+        <!-- End of menu icon toggler -->
+
+        <!-- Begin of logo/brand -->
+        <a class="navbar-brand" href="./index.html">
+            <!-- Arrows scroll down/up -->
+            <span class="logo">
+        <img class="light-logo" src="assets/img/logo.png" alt="Logo">
+      </span>
+            <span class="text">
+        <span class="line">HotCoder.io&trade;</span>
+            </span>
+        </a>
+        <!-- End of logo/brand -->
+
+        <!-- begin of menu wrapper -->
+        <div class="all-menu-wrapper" id="navbarMenu">
+
+            <!-- Begin of hamburger mainmenu menu -->
+            <nav class="navbar-mainmenu" aria-label="">
+                <div class="mainmenu-bg"></div>
+                <div class="mainmenu-content">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#about-us">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#service">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#portfolio">Our Portfolio</a>
+                            <!-- <a class="nav-link" href="./gallery.html">Portfolio</a> -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#clients">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#blog">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#contact-info">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-desc">
+                        <div class="row">
+                            <div class="col col-lg-12">
+                                <p>Your Business Reimagined!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-footer">
+                        <div class="row no-gutters">
+                            <div class="col col-12 col-md-6">
+                                <div class="icons icons-margin">
+                                    <a class="btn-icon" href="https://www.facebook.com/hotcoder.io" target="_blank">
+                                        <em class="icon fa fa-facebook"></em>
+                                    </a>
+                                    <a class="btn-icon" href="https://www.instagram.com/hotcoder.io" target="_blank">
+                                        <em class="icon fa fa-instagram"></em>
+                                    </a>
+                                    <a class="btn-icon" href="https://twitter.com/HotCoder_io" target="_blank">
+                                        <em class="icon fa fa-twitter"></em>
+                                    </a>
+                                    <a class="btn-icon" href="https://www.linkedin.com/company/hotcoder-io" target="_blank">
+                                        <em class="icon fa fa-linkedin"></em>
+                                    </a>
+                                    <a class="btn-icon" href="https://wa.me/message/MOLBF2QOQVBZL1" target="_blank">
+                                        <em class="icon fa fa-whatsapp"></em>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-6 footer-notes">
+                                <p class="text-right">&copy; 2020 -
+                                    <script>
+                                        document.write(new Date().getFullYear());
+                                    </script>| HotCoder Pvt. Ltd. <br>All Rights Reserved. |
+                                    <a href="#">Terms &amp; Conditions</a> apply.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- End of hamburger mainmenu menu -->
+        </div>
+        <!-- end of menu wrapper -->
 
     </header>
+    <!-- END OF site header Menu-->
 
+    <!-- BEGIN OF page cover -->
+    <div class="page-cover">
+        <!-- Cover Background -->
+        <div class="cover-bg bg-img" data-image-src="assets/img/bg-default.jpg"></div>
+
+        <!-- Particles as background - uncomment below to use particles/snow -->
+        <div id="particles-js" class="cover-bg pos-abs full-size bg-color" data-bgcolor="rgba(24, 43, 76, 0.3)"></div>
+
+
+        <!-- Transluscent mask as filter -->
+        <div class="cover-bg-mask bg-color" data-bgcolor="rgba(29, 29, 29, 0.2)"></div>
+    </div>
+    <!--END OF page cover -->
 
     <!-- BEGIN OF page main content -->
-    <main class="demo-main" id="mainpage">
+    <main class="page-main main-anim fullpage-container " id="mainpage">
 
-
-        <div class="section section-list-items">
-
+        <!-- Begin of home section -->
+        <div class="section section-home fullscreen-md main-home section-center" data-section="home">
+            <div class="section-cover home-cover">
+            </div>
             <!-- Begin of section wrapper -->
             <div class="section-wrapper with-margin">
                 <!-- content -->
                 <div class="section-content anim">
-                    <div class="section-content-header">
-                        <div class="title-desc text-center">
-                            <h2 class="display-title">Agenci Portfolio</h2>
-                            <p>Hi there, here is the demo page of this template. Feel free to explore.</p>
+                    <div class="row c-wrapper justify-content-center">
+                        <div class="col-12 col-md-8 text-center">
+                            <!-- title and description -->
+                            <div class="title-desc mb-0">
+                                <h1 class="home-title anim-blur anim-2">
+                                    <span class="light">Hot</span>
+                                    <span class="normal">Coder.io</span>
+                                </h1>
+                                <p class="anim-3">Your Business Reimagined!</p>
+                            </div>
+                            <div class="home-btns btns-action anim-4">
+                                <a class="btn btn-line long-line" href="#projects">
+                                    <span class="text">View Our Projects</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Arrows scroll down/up -->
+                <footer class="section-footer scrolldown">
+                    <a class="down">
+                        <span class="icon"></span>
+                        <span class="txt">Scroll</span>
+                    </a>
+                </footer>
+            </div>
+            <!-- End of section wrapper -->
+        </div>
+        <!-- End of home section -->
+
+
+        <!-- Begin of description section -->
+        <div class="section fp-auto-height-responsive fullscreen-md-off" data-section="about-us">
+
+            <!-- title -->
+            <div class="section-title text-center anim">
+                <h2 class="title-bg">About</h2>
+            </div>
+            <!-- Begin of section wrapper -->
+            <div class="section-wrapper with-margin">
+
+                <!-- content -->
+                <div class="section-content anim">
+                    <div class="row">
+                        <div class="col-12 col-md-4 text-left">
+                            <!-- title and description -->
+                            <div class="title-desc pr-4">
+                                <h2 class="display-5 anim-2">We are more than an Developers.</h2>
+                            </div>
+
+                            <!-- Action button -->
+                            <div class="btns-action anim-3 mb-3">
+                                <a class="btn btn-line" href="#service">
+                                    <span class="text">Our Services</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8 text-left">
+                            <!-- title and description -->
+                            <div class="title-desc anim-4">
+                                <p>We team of <span class="text-indigo">HotCoder.io&trade;</span> are not only a Digital Consultancy but a part of your team who is here to help you at every steps.</p>
+                                <p>The company has gained a reputation among clients because of its excellent service and quality. Our team is fully dedicated first to you. That means we only assure what we can mainly deliver. We provide Quick free support
+                                    with 24*7 by phone calls, emails and live chat.</p>
+                                <p>Our website designs are visually attractive with first-rate typefaces, easy navigation, totally accessible, top legibility, finest graphics, fully cross-platform compatible, typestyle consistency, clean with user-friendly
+                                    and influential web interface designs. We design website’s web page elements that are absolutely optimized for fast downloading and have improved performance that will work very well on the dial-up connection. As an
+                                    a Software Development Company, we hold a great reputation amid our clients. We use extensive platforms for eCommerce assignments, providing the consumer best of experience.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- End of section wrapper -->
+            <!-- Arrows scroll down/up -->
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">Team</span>
+                </a>
+            </footer>
+        </div>
+        <!-- End of description section -->
+
+
+        <!-- Begin of slider section -->
+        <div class="section section-slider fp-auto-height-responsive fullscreen-md" data-section="team">
+
+            <!-- title -->
+            <div class="section-title text-center anim">
+                <h2 class="title-bg">Team</h2>
+            </div>
+
+            <!-- Begin of section wrapper -->
+            <div class="section-wrapper fullwidth">
+                <!-- begin of slider -->
+                <div class="slider-swiper-beta">
+                    <!-- slider -->
+                    <div class="swiper-container slider-container">
+                        <div class="item-list swiper-wrapper">
+                            <!-- item -->
+                            <div class="swiper-slide">
+                                <div class="media-slide-item-beta">
+                                    <!-- <div class="media-bg bg-color" data-bgcolor="#2B2A54"></div> -->
+                                    <div class="media-content text-anim">
+                                        <div class="row justify-content-between">
+                                            <div class="col col-12 col-md-4 col-lg-6 order-lg-2">
+                                                <div class="media-image">
+                                                    <img class="img-block-off" src="./assets/img/items/img-people1.jpg" alt="Alt Text">
+                                                </div>
+                                            </div>
+                                            <div class="col center-v col-12 col-md-4 col-lg-6 order-lg-1">
+                                                <div class="media-body body-margin-right">
+                                                    <h4 class="">Owner</h4>
+                                                    <h3 class="">Chaitanya Pawar</h3>
+                                                    <p>Founder | Director</p>
+                                                    <div class="btns-action">
+                                                        <p>
+                                                            <span class="text">Don't Settle for good, demand great!</span>
+                                                        </p>
+                                                        <a class="btn btn-line" href="">
+                                                            <span class="text">Facebook</span>
+                                                        </a>
+                                                        <a class="btn btn-line" href="">
+                                                            <span class="text">Linkedin</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="swiper-slide">
+                                <div class="media-slide-item-beta">
+                                    <!-- <div class="media-bg bg-color" data-bgcolor="rgb(219, 51, 74)"></div> -->
+                                    <div class="media-content text-anim">
+                                        <div class="row justify-content-between">
+                                            <div class="col col-12 col-md-4 col-lg-6 order-lg-2">
+                                                <div class="media-image">
+                                                    <img class="img-block-off" src="./assets/img/items/img-people2.jpg" alt="Alt Text">
+                                                </div>
+                                            </div>
+                                            <div class="col center-v col-12 col-md-4 col-lg-6">
+                                                <div class="media-body body-margin-right">
+                                                    <h4 class="">Owner</h4>
+                                                    <h3 class="">Chaitanya Pulekar</h3>
+                                                    <p>Co-Founder | CEO</p>
+                                                    <div class="btns-action">
+                                                        <p>
+                                                            <span class="text">Don't Settle for good, demand great!</span>
+                                                        </p>
+                                                        <a class="btn btn-line" href="">
+                                                            <span class="text">Facebook</span>
+                                                        </a>
+                                                        <a class="btn btn-line" href="">
+                                                            <span class="text">Linkedin</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
+
+                    <!-- slider navigation -->
+                    <nav class="items-navigation" aria-label="">
+                        <!-- pagination -->
+                        <div class="items-pagination bar"></div>
+
+                        <!-- buttons -->
+                        <div class="items-buttons">
+                            <div class="items-button-prev">
+                                <a class="btn btn-transp-arrow " href="">
+                                    <em class="icon">
+                                      <span class="arrow-left"></span>
+                                    </em>
+                                    <span class="text">Prev</span>
+                                </a>
+                            </div>
+                            <div class="items-button-next">
+                                <a class="btn btn-transp-arrow " href="">
+                                    <span class="text">Next</span>
+                                    <em class="icon">
+                                      <span class="arrow-right"></span>
+                                    </em>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+                <!-- end of slider slider-swiper-beta -->
+            </div>
+
+            <!-- Arrows scroll down/up -->
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">Services</span>
+                </a>
+            </footer>
+
+        </div>
+        <!-- End of slider section -->
+
+        <!-- Begin of grid list section -->
+        <div class="section fp-auto-height-responsive " data-section="service">
+
+            <!-- title -->
+            <div class="section-title text-center anim">
+                <h2 class="title-bg">Services</h2>
+            </div>
+            <!-- Begin of section wrapper -->
+            <div class="section-wrapper with-margin">
+
+                <!-- content -->
+                <div class="section-content anim grouped-grid">
+                    <div class="section-content-header decor">
+                        <div class="row">
+                            <div class="col-12 col-md-4 text-left">
+                                <!-- title and description -->
+                                <div class="title-desc pr-4">
+                                    <h2 class="display-5 anim-2">Services</h2>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-8 text-left">
+                                <!-- title and description -->
+                                <div class="title-desc anim-4">
+                                    <p>We got 20+ products and services for you and lot more to cover that will help you to grow from 0 to 100. Quickly grab those services and stay competitive in this era.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Design -->
+                    <div class="row grid-group">
+                        <div class="col col-12 col-lg-4 grid-title order-lg-1 anim-4">
+                            <h2 class="display-5 title-margin">Web Design and Hosting</h2>
+                        </div>
+                        <div class="col col-12 col-lg-8 grid-content order-lg-2 anim-5">
+                            <div class="row grid-media-card">
+                                <!-- an item -->
+                                <div class="item col col-12 col-md-6">
+                                    <div class="media-card">
+                                        <div class="media-image">
+                                            <header class="media-image-header">
+                                                <h5>Websites</h5>
+                                            </header>
+                                            <img src="./assets/img/items/img-sample1-square.jpg" alt="Alt Text">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="row no-gutters">
+                                                <div class="col-10">
+                                                    <h4 class="media-title">All kind of Websites</h4>
+                                                </div>
+                                                <!-- <div class="col-4 text-right">
+                                                    <h4 class="price">$120</h4>
+                                                </div> -->
+                                            </div>
+
+                                            <div class="row no-gutters">
+                                                <div class="col-12">
+                                                    <p>Static, Dynamic and any other kind, we got them all just for you.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row no-gutters media-footer">
+                                                <div class="col-12">
+                                                    <a class="btn btn-line pr-0" href="">
+                                                        <span class="text">Request Quote</span>
+                                                    </a>
+                                                    <a class="btn btn-line pr-0" href="./portfolio-details.html">
+                                                        <!-- class = btn-transp -->
+                                                        <span class="text">Details</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- an item -->
+                                <div class="item col col-12 col-md-6">
+                                    <div class="media-card">
+                                        <div class="media-image">
+                                            <header class="media-image-header">
+                                                <h5>Hosting</h5>
+                                            </header>
+                                            <img src="./assets/img/items/img-sample2-square.jpg" alt="Alt Text">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="row no-gutters">
+                                                <div class="col-10">
+                                                    <h4 class="media-title">Web Hosting</h4>
+                                                </div>
+                                                <!-- <div class="col-4 text-right">
+                                                    <h4 class="price">$120</h4>
+                                                </div> -->
+                                            </div>
+
+                                            <div class="row no-gutters">
+                                                <div class="col-12">
+                                                    <p>We host any kind of website for you on advanced servers that are up to the mark and packed with security.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row no-gutters media-footer">
+                                                <div class="col-12">
+                                                    <a class="btn btn-line pr-0" href="">
+                                                        <span class="text">Request Quote</span>
+                                                    </a>
+                                                    <a class="btn btn-line pr-0" href="./portfolio-details.html">
+                                                        <!-- class = btn-transp -->
+                                                        <span class="text">Details</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile App Design -->
+                    <div class="row grid-group">
+                        <div class="col col-12 col-lg-4 grid-title order-lg-2">
+                            <h2 class="display-5 title-margin">Mobile App Design</h2>
+                        </div>
+                        <div class="col col-12 col-lg-8 grid-content order-lg-1">
+                            <div class="row grid-media-card">
+
+                                <!-- an item -->
+                                <div class="item col col-12 col-md-6">
+                                    <div class="media-card">
+                                        <div class="media-image">
+                                            <header class="media-image-header">
+                                                <h5>Mobile / Tablet</h5>
+                                            </header>
+                                            <img src="./assets/img/items/img-sample3-square.jpg" alt="Alt Text">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="row no-gutters">
+                                                <div class="col-8">
+                                                    <h4 class="media-title">Android App</h4>
+                                                </div>
+                                                <!-- <div class="col-4 text-right">
+                                                    <h4 class="price">$120</h4>
+                                                </div> -->
+                                            </div>
+
+                                            <div class="row no-gutters">
+                                                <div class="col-12">
+                                                    <p>Need an Android App for your business?, We have it. We design Android Apps as per your requirements with lot of features.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row no-gutters media-footer">
+                                                <div class="col-12">
+                                                    <a class="btn btn-line pr-0" href="">
+                                                        <span class="text">Request Quote</span>
+                                                    </a>
+                                                    <a class="btn btn-line pr-0" href="./portfolio-details.html">
+                                                        <!-- class = btn-transp -->
+                                                        <span class="text">Details</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- an item -->
+                                <div class="item col col-12 col-md-6">
+                                    <div class="media-card">
+                                        <div class="media-image">
+                                            <header class="media-image-header">
+                                                <h5>iPhone / iPad</h5>
+                                            </header>
+                                            <img src="./assets/img/items/img-sample4-square.jpg" alt="Alt Text">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="row no-gutters">
+                                                <div class="col-10">
+                                                    <h4 class="media-title">iOS / iPadOS App</h4>
+                                                </div>
+                                                <!-- <div class="col-4 text-right">
+                                                    <h4 class="price">$120</h4>
+                                                </div> -->
+                                            </div>
+
+                                            <div class="row no-gutters">
+                                                <div class="col-12">
+                                                    <p>Need an Apple App for your business?, We have it. We design Apple Apps as per your requirements with lot of features.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row no-gutters media-footer">
+                                                <div class="col-12">
+                                                    <a class="btn btn-line pr-0" href="">
+                                                        <span class="text">Request Quote</span>
+                                                    </a>
+                                                    <a class="btn btn-line pr-0" href="./portfolio-details.html">
+                                                        <!-- class = btn-transp -->
+                                                        <span class="text">Details</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Maps Listing -->
+                    <div class="row grid-group">
+                        <div class="col col-12 col-lg-4 grid-title order-lg-1 anim-4">
+                            <h2 class="display-5 title-margin">Maps Listing</h2>
+                        </div>
+                        <div class="col col-12 col-lg-8 grid-content order-lg-2 anim-5">
+                            <div class="row grid-media-card">
+                                <!-- an item -->
+                                <div class="item col col-12 col-md-6">
+                                    <div class="media-card">
+                                        <div class="media-image">
+                                            <header class="media-image-header">
+                                                <h5>Google</h5>
+                                            </header>
+                                            <img src="./assets/img/items/img-sample1-square.jpg" alt="Alt Text">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="row no-gutters">
+                                                <div class="col-10">
+                                                    <h4 class="media-title">Google Maps</h4>
+                                                </div>
+                                                <!-- <div class="col-4 text-right">
+                                                    <h4 class="price">$120</h4>
+                                                </div> -->
+                                            </div>
+
+                                            <div class="row no-gutters">
+                                                <div class="col-12">
+                                                    <p>We help businesses to get visible on Google map and provide guide to stay up to date using Maps.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row no-gutters media-footer">
+                                                <div class="col-12">
+                                                    <a class="btn btn-line pr-0" href="">
+                                                        <span class="text">Request Quote</span>
+                                                    </a>
+                                                    <a class="btn btn-line pr-0" href="./portfolio-details.html">
+                                                        <!-- class = btn-transp -->
+                                                        <span class="text">Details</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- an item -->
+                                <div class="item col col-12 col-md-6">
+                                    <div class="media-card">
+                                        <div class="media-image">
+                                            <header class="media-image-header">
+                                                <h5>Apple</h5>
+                                            </header>
+                                            <img src="./assets/img/items/img-sample2-square.jpg" alt="Alt Text">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="row no-gutters">
+                                                <div class="col-10">
+                                                    <h4 class="media-title">Apple Maps</h4>
+                                                </div>
+                                                <!-- <div class="col-4 text-right">
+                                                    <h4 class="price">$120</h4>
+                                                </div> -->
+                                            </div>
+
+                                            <div class="row no-gutters">
+                                                <div class="col-12">
+                                                    <p>We help businesses to get visible on Apple Maps and provide guide to stay up to date using Maps.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row no-gutters media-footer">
+                                                <div class="col-12">
+                                                    <a class="btn btn-line pr-0" href="">
+                                                        <span class="text">Request Quote</span>
+                                                    </a>
+                                                    <a class="btn btn-line pr-0" href="./portfolio-details.html">
+                                                        <!-- class = btn-transp -->
+                                                        <span class="text">Details</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Graphics Desing -->
+                    <div class="row grid-group">
+                        <div class="col col-12 col-lg-4 grid-title order-lg-2">
+                            <h2 class="display-5 title-margin">Graphic Design</h2>
+                        </div>
+                        <div class="col col-12 col-lg-8 grid-content order-lg-1">
+                            <div class="row grid-media-card">
+
+                                <!-- an item -->
+                                <div class="item col col-12 col-md-6">
+                                    <div class="media-card">
+                                        <div class="media-image">
+                                            <header class="media-image-header">
+                                                <h5>Business Stationary</h5>
+                                            </header>
+                                            <img src="./assets/img/items/img-sample3-square.jpg" alt="Alt Text">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="row no-gutters">
+                                                <div class="col-8">
+                                                    <h4 class="media-title">Logo, Cards...</h4>
+                                                </div>
+                                                <!-- <div class="col-4 text-right">
+                                                    <h4 class="price">$120</h4>
+                                                </div> -->
+                                            </div>
+
+                                            <div class="row no-gutters">
+                                                <div class="col-12">
+                                                    <p>We design appealing Graphics for businesses and individuals. We design mind blowing logos, eCards, etc.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row no-gutters media-footer">
+                                                <div class="col-12">
+                                                    <a class="btn btn-line pr-0" href="">
+                                                        <span class="text">Request Quote</span>
+                                                    </a>
+                                                    <a class="btn btn-line pr-0" href="./portfolio-details.html">
+                                                        <!-- class = btn-transp -->
+                                                        <span class="text">Details</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- an item -->
+                                <div class="item col col-12 col-md-6">
+                                    <div class="media-card">
+                                        <div class="media-image">
+                                            <header class="media-image-header">
+                                                <h5>Business Videograhy</h5>
+                                            </header>
+                                            <img src="./assets/img/items/img-sample4-square.jpg" alt="Alt Text">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="row no-gutters">
+                                                <div class="col-10">
+                                                    <h4 class="media-title">Product Videos</h4>
+                                                </div>
+                                                <!-- <div class="col-4 text-right">
+                                                    <h4 class="price">$120</h4>
+                                                </div> -->
+                                            </div>
+
+                                            <div class="row no-gutters">
+                                                <div class="col-12">
+                                                    <p>Promotional Videos are great to showcase your products and services. We make promotional videos for your business products and services.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row no-gutters media-footer">
+                                                <div class="col-12">
+                                                    <a class="btn btn-line pr-0" href="">
+                                                        <span class="text">Request Quote</span>
+                                                    </a>
+                                                    <a class="btn btn-line pr-0" href="./portfolio-details.html">
+                                                        <!-- class = btn-transp -->
+                                                        <span class="text">Details</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
 
                 </div>
 
             </div>
             <!-- End of section wrapper -->
-        </div>
-        <div class="section section-list-items">
 
+            <!-- Arrows scroll down/up -->
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">Features</span>
+                </a>
+            </footer>
+        </div>
+        <!-- End of grid list section -->
+
+        <!-- Begin of list services/features section -->
+        <div class="section section-list-feature fp-auto-height-responsive " data-section="features">
+
+
+            <!-- title -->
+            <div class="section-title text-center anim">
+                <h2 class="title-bg">Our Features</h2>
+            </div>
             <!-- Begin of section wrapper -->
             <div class="section-wrapper with-margin">
                 <!-- content -->
                 <div class="section-content anim">
-                    <div class="section-content-header">
-                        <div class="title-desc text-center">
-                            <h2>Style</h2>
+                    <div class="section-content-header decor">
+                        <div class="row">
+                            <div class="col-12 col-md-4 text-left">
+                                <!-- title and description -->
+                                <div class="title-desc pr-4">
+                                    <h2 class="display-5 anim-2">Our Features</h2>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-8 text-left">
+                                <!-- title and description -->
+                                <div class="title-desc anim-4">
+                                    <p>Here are all services that we offer. This is just a placeholder text and replace it with your awesome text.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- item list -->
+                    <!-- service list -->
                     <div class="list-items row anim-list">
                         <div class="item col-12 col-lg-4">
-                            <div class="media media-item">
-                                <a href="index1.html">
-                                    <div class="media-image">
-                                        <img class="img" src="demopage/style1.jpg" alt="Image">
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="">Style 1</h4>
-                                    </div>
-                                </a>
+                            <div class="media media-service">
+                                <div class="media-body">
+                                    <h4 class="">24/7 Customer Support</h4>
+                                    <p>An awesome service that we offer to you. This is just a placeholder text.
+                                    </p>
+                                </div>
+                                <footer class="media-footer">
+                                    <a class="btn btn-line" href="./portfolio-details.html">
+                                        <span class="text">Details</span>
+                                    </a>
+                                </footer>
                             </div>
                         </div>
                         <div class="item col-12 col-lg-4">
-                            <div class="media media-item">
-                                <a href="index-style-1.html">
-                                    <div class="media-image">
-                                        <img class="img" src="demopage/style2.jpg" alt="Image">
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="">Style 2</h4>
-                                    </div>
-                                </a>
+                            <div class="media media-service">
+                                <div class="media-body">
+                                    <h4 class="">Responsive Websites</h4>
+                                    <p>An awesome service that we offer to you. This is just a placeholder text.
+                                    </p>
+                                </div>
+                                <footer class="media-footer">
+                                    <a class="btn btn-line" href="./portfolio-details.html">
+                                        <span class="text">Details</span>
+                                    </a>
+                                </footer>
                             </div>
                         </div>
                         <div class="item col-12 col-lg-4">
-                            <div class="media media-item mb-0">
-                                <a href="index-style-2.html">
-                                    <div class="media-image">
-                                        <img class="img" src="demopage/style3.jpg" alt="Image">
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="">Style 3</h4>
-                                    </div>
-                                </a>
+                            <div class="media media-service mb-0">
+                                <div class="media-body">
+                                    <h4 class="">Cloud Server</h4>
+                                    <p>An awesome service that we offer to you. This is just a placeholder text.
+                                    </p>
+                                </div>
+                                <footer class="media-footer">
+                                    <a class="btn btn-line" href="./portfolio-details.html">
+                                        <span class="text">Details</span>
+                                    </a>
+                                </footer>
                             </div>
                         </div>
                     </div>
-                    <!-- end of item list -->
-                </div>
+                    <!-- end of service list -->
+                    <br><br>
 
-            </div>
-            <!-- End of section wrapper -->
-        </div>
-        <div class="section section-list-items">
-
-            <!-- Begin of section wrapper -->
-            <div class="section-wrapper with-margin">
-                <!-- content -->
-                <div class="section-content anim">
-                    <div class="section-content-header">
-                        <div class="title-desc text-center">
-                            <h2>Scrolling Behavior</h2>
-                        </div>
-                    </div>
-
-                    <!-- item list -->
-                    <div class="list-items row anim-list justify-content-center">
-                        <div class="item col-12 col-lg-4">
-                            <div class="media media-item">
-                                <a href="index-fixed.html">
-                                    <div class="media-image">
-                                        <img class="img" src="demopage/fixed.jpg" alt="Image">
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="">Fixed background</h4>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item col-12 col-lg-4">
-                            <div class="media media-item">
-                                <a href="index-fullscreen.html">
-                                    <div class="media-image">
-                                        <img class="img" src="demopage/default.jpg" alt="Image">
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="">Fullpage scrolling effect</h4>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item col-12 col-lg-4">
-                            <div class="media media-item">
-                                <a href="index-home-2.html">
-                                    <div class="media-image">
-                                        <img class="img" src="demopage/home2.jpg" alt="Image">
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="">Normal Scroll</h4>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end of item list -->
-                </div>
-
-            </div>
-            <!-- End of section wrapper -->
-        </div>
-        <div class="section section-list-items">
-
-            <!-- Begin of section wrapper -->
-            <div class="section-wrapper with-margin">
-                <!-- content -->
-                <div class="section-content anim">
-                    <div class="section-content-header">
-                        <div class="title-desc text-center">
-                            <h2>Background Cover</h2>
-                        </div>
-                    </div>
-
-                    <!-- item list -->
+                    <!-- service list -->
                     <div class="list-items row anim-list">
                         <div class="item col-12 col-lg-4">
-                            <div class="media media-item">
-                                <a href="index-particle.html">
-                                    <div class="media-image">
-                                        <img class="img" src="demopage/particle.jpg" alt="Image">
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="">Particles</h4>
-                                    </div>
-                                </a>
+                            <div class="media media-service">
+                                <div class="media-body">
+                                    <h4 class="">24/7 Customer Support</h4>
+                                    <p>An awesome service that we offer to you. This is just a placeholder text.
+                                    </p>
+                                </div>
+                                <footer class="media-footer">
+                                    <a class="btn btn-line" href="./portfolio-details.html">
+                                        <span class="text">Details</span>
+                                    </a>
+                                </footer>
                             </div>
                         </div>
                         <div class="item col-12 col-lg-4">
-                            <div class="media media-item">
-                                <a href="index-video.html">
-                                    <div class="media-image">
-                                        <img class="img" src="demopage/video.jpg" alt="Image">
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="">Video</h4>
-                                    </div>
-                                </a>
+                            <div class="media media-service">
+                                <div class="media-body">
+                                    <h4 class="">Responsive Websites</h4>
+                                    <p>An awesome service that we offer to you. This is just a placeholder text.
+                                    </p>
+                                </div>
+                                <footer class="media-footer">
+                                    <a class="btn btn-line" href="./portfolio-details.html">
+                                        <span class="text">Details</span>
+                                    </a>
+                                </footer>
                             </div>
                         </div>
                         <div class="item col-12 col-lg-4">
-                            <div class="media media-item mb-0">
-                                <a href="index-slideshow.html">
-                                    <div class="media-image">
-                                        <img class="img" src="demopage/slideshow.jpg" alt="Image">
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="">Slideshow</h4>
-                                    </div>
-                                </a>
+                            <div class="media media-service mb-0">
+                                <div class="media-body">
+                                    <h4 class="">Cloud Server</h4>
+                                    <p>An awesome service that we offer to you. This is just a placeholder text.
+                                    </p>
+                                </div>
+                                <footer class="media-footer">
+                                    <a class="btn btn-line" href="./portfolio-details.html">
+                                        <span class="text">Details</span>
+                                    </a>
+                                </footer>
                             </div>
                         </div>
                     </div>
-                    <!-- end of item list -->
+                    <!-- end of service list -->
                 </div>
 
             </div>
             <!-- End of section wrapper -->
+
+            <!-- Arrows scroll down/up -->
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">Portfolio</span>
+                </a>
+            </footer>
         </div>
+        <!-- End of list services/features section -->
+
+        <!-- Begin of grid list section -->
+        <div class="section fp-auto-height-responsive " data-section="portfolio">
+
+            <!-- Begin of section wrapper -->
+            <div class="section-wrapper with-margin">
+
+                <!-- content -->
+                <div class="section-content anim">
+                    <div class="title-desc title-margin text-center">
+                        <h2 class="display-3 display-title anim-2">Our Portfolio</h2>
+                        <p class="anim-3">Here are some amazing arts. This is just a placeholder text.</p>
+                    </div>
+
+                    <div class="row row-random grid-media-aside-text fade-3">
+                        <!-- an item -->
+                        <div class="item col col-12 col-md-6 text-left">
+                            <div class="media-aside-text">
+                                <div class="media-image">
+                                    <img src="./assets/img/items/img-portrait2.jpg" alt="Alt Text">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="">Le saut</h4>
+                                    <p>Art, Photography</p>
+
+                                    <a class="btn btn-line" href="./portfolio-details.html">
+                                        <span class="text">Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- an item -->
+                        <div class="item col col-12 col-md-6 text-left">
+                            <div class="media-aside-text">
+                                <div class="media-image">
+                                    <img src="./assets/img/items/img-portrait3.jpg" alt="Alt Text">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="">Fraise Ice</h4>
+                                    <p>Art culinaire</p>
+
+                                    <a class="btn btn-line" href="./portfolio-details.html">
+                                        <span class="text">Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- an item -->
+                        <div class="item col col-12 col-md-6 text-left">
+                            <div class="media-aside-text">
+                                <div class="media-image">
+                                    <img src="./assets/img/items/img-portrait1.jpg" alt="Alt Text">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="">Pink Tree</h4>
+                                    <p>October 1960</p>
+
+                                    <a class="btn btn-line" href="./portfolio-details.html">
+                                        <span class="text">Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- an item -->
+                        <div class="item col col-12 col-md-6 text-left">
+                            <div class="media-aside-text">
+                                <div class="media-image">
+                                    <img src="./assets/img/items/img-portrait4.jpg" alt="Alt Text">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="">Chaudière</h4>
+                                    <p>Interior design</p>
+
+                                    <a class="btn btn-line" href="./portfolio-details.html">
+                                        <span class="text">Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of section wrapper -->
+
+            <!-- Arrows scroll down/up -->
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">Testimonials</span>
+                </a>
+            </footer>
+        </div>
+        <!-- End of grid list section -->
+
+        <!-- Begin of slider/quotes section -->
+        <div class="section section-list-feature fp-auto-height-responsive " data-section="clients">
+
+            <!-- title -->
+            <div class="section-title text-center anim">
+                <h2 class="title-bg">Testimonials</h2>
+            </div>
+            <!-- Begin of section wrapper -->
+            <div class="section-wrapper with-margin">
+                <!-- content -->
+                <div class="section-content anim">
+                    <div class="section-content-header">
+                        <div class="row">
+                            <div class="col-12 col-md-4 text-left">
+                                <!-- title and description -->
+                                <div class="title-desc pr-4">
+                                    <h2 class="display-5 anim-2">They trust us.</h2>
+                                </div>
+
+                                <!-- Action button -->
+                                <div class="btns-action anim-3 mb-3">
+                                    <a class="btn btn-line" href="#service">
+                                        <span class="text text-indigo">Our Portfolio</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-8 text-left">
+                                <!-- title and description -->
+                                <div class="title-desc anim-4">
+                                    <p>We got <span class="text-indigo">100+ customers</span> who trust us and are growing with us. Have a look at our portfolio too to have a look on our work. <br> <span class="text-indigo">It's time</span>, you too can
+                                        join the league</p>
+                                </div>
+
+                                <!-- number list -->
+                                <div class="list-items row anim-list">
+                                    <div class="item col-6 col-lg-4">
+                                        <div class="media media-number">
+                                            <div class="media-body">
+                                                <h4 class="">100+</h4>
+                                                <p>Work Hours.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item col-6 col-lg-4">
+                                        <div class="media media-number">
+                                            <div class="media-body">
+                                                <h4 class="">200+</h4>
+                                                <p>Customers around the Globe</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item col-6 col-lg-4">
+                                        <div class="media media-number">
+                                            <div class="media-body">
+                                                <h4 class="">20+</h4>
+                                                <p>Products and Services</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of number list -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- begin of slider -->
+                    <div class="slider-swiper-gamma anim-5">
+                        <!-- slider content-->
+                        <div class="swiper-container slider-container">
+                            <div class="item-list swiper-wrapper">
+                                <!-- item -->
+                                <div class="swiper-slide">
+                                    <div class="media-slide-item-gamma">
+                                        <div class="media-content text-anim">
+                                            <div class="row">
+                                                <div class="col col-12 col-md-4 col-lg-4">
+                                                    <div class="media-image">
+                                                        <img class="logo" src="./assets/img/icons/client1.png" alt="Alt Text">
+                                                    </div>
+                                                </div>
+                                                <div class="col col-12 col-md-6 col-lg-6">
+                                                    <div class="media-body">
+                                                        <p>We got a better than expected result from them. This is a sample testimony text so just replace it.</p>
+                                                        <h4 class="">Henry K. CM Spiral Tech</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item -->
+                                <div class="swiper-slide">
+                                    <div class="media-slide-item-gamma">
+                                        <div class="media-content text-anim">
+                                            <div class="row">
+                                                <div class="col col-12 col-md-4 col-lg-4">
+                                                    <div class="media-image">
+                                                        <img class="logo" src="./assets/img/icons/client2.png" alt="Alt Text">
+                                                    </div>
+                                                </div>
+                                                <div class="col col-12 col-md-6 col-lg-6">
+                                                    <div class="media-body">
+                                                        <p>We got a better than expected result from them. This is a sample testimony text so just replace it.</p>
+                                                        <h4 class="">John C. CEO First Startup</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item -->
+                                <div class="swiper-slide">
+                                    <div class="media-slide-item-gamma">
+                                        <div class="media-content text-anim">
+                                            <div class="row">
+                                                <div class="col col-12 col-md-4 col-lg-4">
+                                                    <div class="media-image">
+                                                        <img class="logo" src="./assets/img/icons/client3.png" alt="Alt Text">
+                                                    </div>
+                                                </div>
+                                                <div class="col col-12 col-md-6 col-lg-6">
+                                                    <div class="media-body">
+                                                        <p>We got a better than expected result from them. This is a sample testimony text so just replace it.</p>
+                                                        <h4 class="">Dave B. CEO Bravo</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!-- slider navigation -->
+                        <nav class="items-navigation" aria-label="">
+                            <!-- pagination -->
+                            <div class="items-pagination bar"></div>
+                        </nav>
+
+                    </div>
+                    <!-- end of slider slider-swiper-gamma-->
+                </div>
+
+            </div>
+            <!-- End of section wrapper -->
+
+            <!-- Arrows scroll down/up -->
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">Subscribe</span>
+                </a>
+            </footer>
+        </div>
+        <!-- End of slider/quotes section -->
+
+        <!-- Begin of register/login/signin section -->
+        <div class="section section-register fp-auto-height-responsive " data-section="register">
+
+
+            <!-- title -->
+            <div class="section-title text-center anim">
+                <h2 class="title-bg">Subscribe</h2>
+            </div>
+            <!-- Begin of section wrapper -->
+            <div class="section-wrapper with-margin">
+
+                <!-- content -->
+                <div class="section-content anim">
+
+                    <div class="row">
+
+                        <div class="col-12 col-md-4 text-left">
+                            <!-- title and description -->
+                            <div class="title-desc pr-4">
+                                <h2 class="display-5 anim-2">Call to action.</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-8">
+                            <!-- form container form-container-signup-->
+                            <div class="form-container-signup">
+
+                                <form class="send_email_form form-container" method="post" action="ajaxserver/serverfile.php">
+                                    <div class="form-desc">
+                                        <p class="invite anim-4">Don't miss any news via email! Don't worry, even we don't like spams. <br>Register email if you agree :</p>
+                                        <div class="notice">
+                                            <span class="asterisk">*</span>You agree to provide your valid email.</div>
+                                    </div>
+                                    <div class="form-input anim-5">
+                                        <div class="row">
+                                            <div class="col-12 col-md-8 col-lg-10">
+                                                <div class="form-group form-success-gone">
+                                                    <label for="reg-email" class="text-indigo">Email Address *</label>
+                                                    <input id="reg-email" name="email" class="form-control-line form-control-white" type="email" required placeholder="your-email@xyz.com" data-validation-type="email" />
+                                                </div>
+
+                                                <div class="form-group form-success-gone mb-0">
+                                                    <button id="submit-email" name="submit_email" class="btn btn-outline-white form-success-gone mb-0">
+                                                        <span class="text">Subscribe</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4 col-lg-2">
+                                            </div>
+                                        </div>
+                                        <div class="form-group mb-0">
+                                            <div>
+                                                <p class="email-ok invisible form-text-feedback form-success-visible">Your email has been registred, thank you.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- END send_email_form -->
+                            </div>
+                            <!-- End of form container form-container-signup-->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end of content -->
+            </div>
+            <!-- End of section wrapper -->
+
+            <!-- Arrows scroll down/up -->
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">Blogs</span>
+                </a>
+            </footer>
+        </div>
+        <!-- End of register/login/signin section -->
+
+        <!-- Begin of slider section -->
+        <div class="section section-slider fp-auto-height-responsive fullscreen-md" data-section="blog">
+
+            <!-- title -->
+            <div class="section-title text-center anim">
+                <h2 class="title-bg">Blogs</h2>
+            </div>
+
+            <!-- Begin of section wrapper -->
+            <div class="section-wrapper fullwidth anim">
+                <!-- begin of slider -->
+                <div class="slider-swiper-alpha">
+                    <!-- slider -->
+                    <div class="swiper-container slider-container">
+                        <div class="item-list swiper-wrapper">
+                            <!-- item -->
+                            <div class="swiper-slide">
+                                <div class="media-slide-item-alpha">
+                                    <div class="media-image mask-black">
+                                        <img class="img-block" src="./assets/img/items/img-sample4.jpg" alt="Alt Text">
+                                    </div>
+                                    <div class="media-content fade-3">
+                                        <div class="row">
+                                            <div class="col col-12 col-md-4 col-lg-4">
+                                                <div class="media-body body-margin-right text-anim">
+                                                    <h4 class="">Case Study</h4>
+                                                    <h3 class="">Olympic Reflex</h3>
+                                                    <p>Business branding, Marketing</p>
+
+                                                    <div class="btns-action">
+                                                        <a class="btn btn-line" href="./blog-post.html">
+                                                            <span class="text">Read more</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col col-12 col-md-6 col-lg-6">
+                                                <div class="media-body centered">
+                                                    <p>This is just a placeholder text. And this is a website template, helping you to build modern and beautiful websites.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="swiper-slide">
+                                <div class="media-slide-item-alpha">
+                                    <div class="media-image mask-black">
+                                        <img class="img-block" src="./assets/img/items/img-sample6.jpg" alt="Alt Text">
+                                    </div>
+                                    <div class="media-content">
+                                        <div class="row">
+                                            <div class="col col-12 col-md-4 col-lg-4">
+                                                <div class="media-body body-margin-right text-anim">
+                                                    <h4 class="">Case Study</h4>
+                                                    <h3 class="">Resto de l'Ouest</h3>
+                                                    <p>App, Website</p>
+
+                                                    <div class="btns-action">
+                                                        <a class="btn btn-line" href="./blog-post.html">
+                                                            <span class="text">Read more</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col col-12 col-md-6 col-lg-6">
+                                                <div class="media-body centered">
+                                                    <p>This is just a placeholder text. And this is a website template, helping you to build modern and beautiful websites.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="swiper-slide">
+                                <div class="media-slide-item-alpha">
+                                    <div class="media-image mask-black">
+                                        <img class="img-block" src="./assets/img/items/img-sample8.jpg" alt="Alt Text">
+                                    </div>
+                                    <div class="media-content">
+                                        <div class="row">
+                                            <div class="col col-12 col-md-4 col-lg-4">
+                                                <div class="media-body body-margin-right text-anim">
+                                                    <h4 class="">Case Study</h4>
+                                                    <h3 class="">Car Showroom</h3>
+                                                    <p>Couverture Photo</p>
+
+                                                    <div class="btns-action">
+                                                        <a class="btn btn-line" href="./blog-post.html">
+                                                            <span class="text">Read more</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col col-12 col-md-6 col-lg-6">
+                                                <div class="media-body centered">
+                                                    <p>This is just a placeholder text. And this is a website template, helping you to build modern and beautiful websites.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- slider navigation -->
+                    <nav class="items-navigation" aria-label="">
+                        <!-- pagination -->
+                        <div class="items-pagination bar"></div>
+
+                        <!-- buttons -->
+                        <div class="items-buttons">
+                            <div class="items-button-prev">
+                                <a class="btn btn-transp-arrow " href="">
+                                    <em class="icon">
+                  <span class="arrow-left"></span>
+                                  </em>
+                                    <span class="text">Prev</span>
+                                </a>
+                            </div>
+                            <div class="items-button-next">
+                                <a class="btn btn-transp-arrow " href="">
+                                    <span class="text">Next</span>
+                                    <em class="icon">
+                  <span class="arrow-right"></span>
+                                  </em>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+                <!-- end of slider slider-swiper-alpha -->
+            </div>
+
+            <!-- Arrows scroll down/up -->
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">Contact Us</span>
+                </a>
+            </footer>
+
+        </div>
+        <!-- End of slider section -->
+
+        <!-- Begin of contact section -->
+        <div class="section section-contact fp-auto-height-responsive " data-section="contact-info">
+
+            <!-- title -->
+            <div class="section-title text-center anim">
+                <h2 class="title-bg">Contact</h2>
+            </div>
+            <!-- Begin of section wrapper -->
+            <div class="section-wrapper  with-margin">
+
+                <div class="section-content">
+                    <div class="row">
+
+                        <!-- begin of title content -->
+                        <div class="col-12 col-lg-4 anim">
+                            <div class="title-desc pr-4">
+                                <h2 class="display-5 anim-2">Let's have a Talk.</h2>
+                            </div>
+
+                            <!-- Action button -->
+                            <div class="btns-action anim-3 contact-btns-action mb-4">
+                                <a class="btn btn-line show-contact-information" href="#">
+                                    <span class="text">Contact Info</span>
+                                </a>
+                                <a class="btn btn-line show-contact-message" href="#">
+                                    <span class="text">Write Us</span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <!-- end of title content -->
+
+                        <!-- begin of desc content -->
+                        <div class="col-12 col-lg-8">
+                            <!-- content -->
+                            <div class="section-content anim text-left">
+                                <!-- begin of slider -->
+                                <div class="slider-swiper-contact">
+                                    <!-- slider content-->
+                                    <div class="swiper-container slider-container">
+                                        <div class="item-list swiper-wrapper">
+                                            <!-- contact-information-slide -->
+                                            <div class="swiper-slide contact-information-slide">
+                                                <div class="contact-information" id="contact-information">
+                                                    <!-- title and description -->
+                                                    <div class="title-desc mb-0">
+                                                        <div class="anim-4">
+                                                            <p>Want to start an awesome projects or have questions about our company and products found on our stores? Feel free to talk to us, we will be happy to answser you. Here is how to reach us:
+                                                            </p>
+
+                                                        </div>
+
+                                                        <div class="address-container anim-5">
+                                                            <div class="row">
+                                                                <div class="col-12 col-md-6 col-lg-6">
+                                                                    <h4 class="display-6 display-decor">Contact</h4>
+                                                                    <p>Call: 01 234 567 89</p>
+                                                                    <p>Email: ouremail@domain.com</p>
+
+                                                                    <div class="icons icons-margin">
+                                                                        <a class="btn-icon" href="https://www.facebook.com/hotcoder.io" target="_blank">
+                                                                            <em class="icon fa fa-facebook"></em>
+                                                                        </a>
+                                                                        <a class="btn-icon" href="https://www.instagram.com/hotcoder.io" target="_blank">
+                                                                            <em class="icon fa fa-instagram"></em>
+                                                                        </a>
+                                                                        <a class="btn-icon" href="https://twitter.com/HotCoder_io" target="_blank">
+                                                                            <em class="icon fa fa-twitter"></em>
+                                                                        </a>
+                                                                        <a class="btn-icon" href="https://www.linkedin.com/company/hotcoder-io" target="_blank">
+                                                                            <em class="icon fa fa-linkedin"></em>
+                                                                        </a>
+                                                                        <a class="btn-icon" href="https://wa.me/message/MOLBF2QOQVBZL1" target="_blank">
+                                                                            <em class="icon fa fa-whatsapp"></em>
+                                                                        </a>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="col-12 col-md-6 col-lg-6">
+                                                                    <h4 class="display-6 display-decor">Address</h4>
+                                                                    <p>
+                                                                        Company address
+                                                                        <br>12 Street Turning Place
+                                                                        <br>South Est, Antartica
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end of contact-information-slide -->
+
+                                            <!-- contact-message-slide -->
+                                            <div class="swiper-slide contact-message-slide">
+                                                <div class="contact-message">
+                                                    <!-- title and description -->
+                                                    <div class="title-desc">
+                                                        <p class="">For questions about our company and products found on our stores. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem.</p>
+                                                    </div>
+                                                    <!-- begin of message container -->
+                                                    <div class="message-form">
+                                                        <div class="form-container form-container-card">
+                                                            <!-- Message form container -->
+                                                            <form class="send_message_form message form" method="post" action="ajaxserver/serverfile.php" id="message_form">
+                                                                <div class="row">
+                                                                    <div class="col-12 col-lg-6">
+                                                                        <div class="form-group name">
+                                                                            <input id="mes-name" name="name" type="text" placeholder="Name" class="form-control form-control-outline input-full thick form-success-clean" required>
+                                                                        </div>
+                                                                        <div class="form-group email">
+                                                                            <input id="mes-email" type="email" placeholder="Email" name="email" class="form-control form-control-outline input-full thick form-success-clean" required>
+                                                                        </div>
+                                                                        <div class="form-group no-border">
+                                                                            <textarea id="mes-text" placeholder="Message ..." name="message" class="form-control form-control-outline thick form-success-clean" required></textarea>
+
+                                                                            <div>
+                                                                                <p class="message-ok invisible form-text-feedback form-success-visible">Your message has been sent, thank you.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-lg-6">
+                                                                        <button id="submit-message" class="btn btn-outline-white email_b" name="submit_message">
+                                                                          <span class="txt">Send Now</span>
+                                                                          <span class="arrow-icon"></span>
+                                                                        </button>
+
+                                                                    </div>
+                                                                </div>
+
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end of message container -->
+                                                </div>
+                                            </div>
+                                            <!-- end of contact-message-slide -->
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of slider slider-swiper-gamma-->
+                            </div>
+
+                        </div>
+                        <!-- end of desc content -->
+                    </div>
+                </div><br>
+                <div class="apple-business-chat-banner-container" data-apple-business-id="4d14f6ac-42fa-4b04-b876-7b0a7fb01290" data-apple-business-phone="+919172566038" data-apple-banner-cta="iMessage Us" data-apple-banner-context="Chat with one of our professional to solve your query."
+                    data-apple-banner-rounded-corners="false" data-apple-banner-background-color="rgb(0, 0, 0)" data-apple-banner-text-color="rgb(255, 255, 255)"></div>
+
+            </div>
+            <!-- End of section wrapper -->
+            <!-- Arrows scroll down/up -->
+            <footer class="section-footer scrolldown">
+                <a class="up">
+                    <span class="icon"></span>
+                    <span class="txt">To Top</span>
+                </a>
+            </footer>
+
+        </div>
+        <!-- End of contact section -->
     </main>
     <!-- END OF page main content -->
 
+    <!-- BEGIN OF page footer -->
+    <footer id="site-footer" class="page-footer d-none d-lg-block">
+
+        <!-- Left content -->
+        <div class="footer-left">
+            <ul class="social">
+                <li>
+                    <a class="btn-icon" href="https://www.facebook.com/hotcoder.io" target="_blank">
+                        <em class="icon fa fa-facebook"></em>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-icon" href="https://www.instagram.com/hotcoder.io" target="_blank">
+                        <em class="icon fa fa-instagram"></em>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-icon" href="https://twitter.com/HotCoder_io" target="_blank">
+                        <em class="icon fa fa-twitter"></em>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-icon" href="https://www.linkedin.com/company/hotcoder-io" target="_blank">
+                        <em class="icon fa fa-linkedin"></em>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-icon" href="https://wa.me/message/MOLBF2QOQVBZL1" target="_blank">
+                        <em class="icon fa fa-whatsapp"></em>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- END OF site footer -->
+
+    <!-- scripts -->
+    <!-- All Javascript plugins goes here -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!-- All vendor scripts -->
+    <script src="./assets/js/vendor/scrolloverflow.min.js"></script>
+    <script src="./assets/js/vendor/all.js"></script>
+    <script src="./assets/js/particlejs/particles.min.js"></script>
+
+    <!-- Countdown script -->
+    <script src="./assets/js/jquery.downCount.js"></script>
+
+    <!-- Form script -->
+    <script src="./assets/js/form_script.js"></script>
+
+    <!-- Javascript main files -->
+    <script src="./assets/js/main.js"></script>
+    <script src="js/particlejs/particles-init.js"></script>
+
+
 </body>
+
+</html>
 
 </html>

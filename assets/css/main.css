@@ -83,6 +83,14 @@ http://miradontsoa.com
     .text-indigo {
         color: #8856e4 !important;
     }
+    
+    .text-pinky {
+        color: #c021ff !important;
+    }
+    
+    .text-blueindigo {
+        color: rgb(98, 101, 255) !important;
+    }
     /* 0. Base style */
     /* 0.1 Tag and Class Initializer */
     /* 0.0 Tag/Classes Initailization */
@@ -4753,7 +4761,8 @@ http://miradontsoa.com
             top: 64px;
             bottom: 64px;
             right: 0;
-            border-left: 2px solid currentColor;
+            border-left: 2px solid #8856e4;
+            box-shadow: 6px 25px #98b4ff;
         }
     }
     
@@ -5265,8 +5274,8 @@ http://miradontsoa.com
         width: 4px;
         height: 4px;
         border-radius: 40px;
-        background: currentColor;
-        opacity: 0.2;
+        background: #c021ff;
+        opacity: 0.8;
         transition: 0.3s;
     }
     
@@ -6189,7 +6198,7 @@ http://miradontsoa.com
         opacity: 0.1;
         -webkit-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
-        -webkit-text-stroke: 1.5px #ffffff;
+        -webkit-text-stroke: 2.5px #ffffff;
         color: transparent;
     }
     
@@ -6206,7 +6215,7 @@ http://miradontsoa.com
     }
     
     .fullpage-container .section-title .title-bg {
-        opacity: 0.0;
+        opacity: 0.1;
         transition-delay: 0.0s;
     }
     
